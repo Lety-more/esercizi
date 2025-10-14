@@ -25,6 +25,21 @@ for i in range(0,20):
     punto=(random.randint(0,10),random.randint(0,10))
     punti_cartesiano.append(punto)
 
+#acisa masima
+ind_min=0
+minimo=x[0]
+for i in range(0,20):
+    if x[i]<minimo:
+        minimo=x[i]
+        ind_min=i
+print(minimo,y[ind_min])
+
+punti_cartesiano=[]
+for i in range(0,20):
+    punto=(random.randint(0,10),random.randint(0,10))
+    punti_cartesiano.append(punto)
+
+
 
 # come accedere alla x del primo numero
 print(punti_cartesiano[0][0])
