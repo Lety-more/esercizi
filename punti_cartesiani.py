@@ -9,9 +9,10 @@ y=[]
 for i in range(0,20):
     y.append(random.randint(0,10))
     x.append(random.randint(0,10))
-#acisa masima
+#acisa masima e minima
 #scorere lascisa delle x e savare lindice
 #fare print il numero
+
 ind_mas=0
 masimo=x[0]
 for i in range(0,20):
@@ -20,29 +21,35 @@ for i in range(0,20):
         ind_mas=i
 print(masimo,y[ind_mas])
 
-punti_cartesiano=[]
-for i in range(0,20):
-    punto=(random.randint(0,10),random.randint(0,10))
-    punti_cartesiano.append(punto)
-
-#acisa masima
 ind_min=0
-minimo=x[0]
+minimo=y[0]
 for i in range(0,20):
-    if x[i]<minimo:
-        minimo=x[i]
+    if y[i]<minimo:
+        minimo=y[i]
         ind_min=i
 print(minimo,y[ind_min])
 
+#masimo e minimo della ascisa e ordinata usando la tupla
 punti_cartesiano=[]
 for i in range(0,20):
     punto=(random.randint(0,10),random.randint(0,10))
     punti_cartesiano.append(punto)
 
+massimo=punti_cartesiano[0]
+for i in range(1,20):
+    if punti_cartesiano[i][0]>massimo[0]:
+        massimo=punti_cartesiano[i]
+print(massimo)
+
+minimo=punti_cartesiano[0]
+for i in range(1,20):
+    if punti_cartesiano[i][0]<minimo[0]:
+        minimo=punti_cartesiano[i]
+print(minimo)
 
 
 # come accedere alla x del primo numero
-print(punti_cartesiano[0][0])
+#print(punti_cartesiano[0][0])
 # come accedere alla y del primo numero
-print(punti_cartesiano[0][1])
+#print(punti_cartesiano[0][1])
 
