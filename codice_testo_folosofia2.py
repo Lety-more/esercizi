@@ -2,7 +2,7 @@ import string
 from collections import Counter
 
 #Parole da escludere
-stopwords = ['il', 'la', 'lo', 'i', 'gli', 'le', 'un', 'una', 'uno','di', 'a', 'da', 'in', 'con', 'su', 'per', 'tra', 'fra','e', 'o', 'ma', 'che', 'non', 'più', 'come', 'anche', 'se']
+stopwords = ['il', 'la', 'lo', 'i', 'gli','è','si', 'le', 'un', 'una', 'uno','di', 'a', 'da', 'in', 'con', 'su', 'per', 'tra', 'fra','e', 'o', 'ma', 'che', 'non', 'più', 'come', 'anche', 'se']
 
 #Lettura del testo dal file
 with open("testo_meraviglia.txt", "r", encoding="utf-8") as file:
@@ -32,3 +32,4 @@ concetti = {'filosofia': 'conoscenza','meraviglia': 'origine','sapere': 'epistem
 print("\nAssociazioni concettuali:")
 for parola, concetto in concetti.items():
     print(f"- {parola} → {concetto}")
+
